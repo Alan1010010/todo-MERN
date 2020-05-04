@@ -1,10 +1,10 @@
-const mongoose = require(mongoose);
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 // create schema for a todo
 const TodoSchema = new Schema({
   action: {
-    type: String;
+    type: String,
     required: [true, 'The todo text field is required brah']
   }
 })
